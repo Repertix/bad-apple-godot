@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyyunlwbfu7pu"]
+
+[ext_resource type="AudioStream" uid="uid://c3yailbeabqf8" path="res://victim.mp3" id="1_jocp1"]
+
+[node name="Video" type="Control"]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 3
+anchor_right = 0.0694444
+anchor_bottom = 0.0617284
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_jocp1")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv7ux0pok2b8l"]
+
+[ext_resource type="Script" uid="uid://do0fxjgacjxcn" path="res://obj_world.gd" id="1_7d822"]
+[ext_resource type="AudioStream" uid="uid://c3yailbeabqf8" path="res://victim.mp3" id="2_q3axf"]
+
+[node name="World" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_7d822")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_q3axf")
+
+[node name="Pixels" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
