@@ -19,7 +19,7 @@ Due to the fact I can't import more than 100 files on the same time to GitHub, y
 2. Download the original video as is and put it inside said folder.
 3. With ffmpeg, use your preference command prompt interface (or just use Windows CMD) and execute the next code in the same folder:
 ```
-ffmpeg -i [VIDEO_HERE: e.g. my_video.mp4] -vf scale=80:40,format=gray -pix_fmt gray -compression_level 0 frames/frame%d.pgm
+ffmpeg -i [VIDEO_HERE: e.g. my_video.mp4] -vf scale=80:40,format=gray -pix_fmt gray -compression_level 0 frame%d.pgm
 ```
 4. Let the process finish and you should be able to get the project running!
 
